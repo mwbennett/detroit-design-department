@@ -1,8 +1,9 @@
 ---
+title: Jimi Filipovski
+date: 2017-12-02 16:54:49 Z
 layout: default
-name:  "Jimi Filipovski"
-company_name: "Waymark"
-date:   2017-12-02 11:54:49 -0500
+name: Jimi Filipovski
+company_name: Waymark
 is_verified: true
 ---
 

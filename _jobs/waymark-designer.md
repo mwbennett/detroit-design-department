@@ -1,10 +1,10 @@
 ---
+title: Designer
 layout: job
-title: "Designer"
-company_name: "Waymark"
-company_url: "https://waymark.com"
-date_start: 2017-12-02 11:54:49 -0500
-date_end: 2018-01-02 11:54:49 -0500
+company_name: Waymark
+company_url: https://waymark.com
+date_start: 2017-12-02 16:54:49 Z
+date_end: 2018-01-02 16:54:49 Z
 has_paid: true
 is_active: true
 ---
