@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="jobs">
+
+  <h1 class="page-heading">Jobs</h1>
+
+  <ul class="jobs-list">
+    {% assign paid_jobs = site.jobs | where: 'has_paid', true %}
+    {% assign paid_active_jobs = paid_jobs | where: 'is_active', true %}
+
+    {% for job in paid_active_jobs %}
+      <li class="job-details">
+        <a class="company-link" href="{{ job.url | relative_url }}"><h2 class="job-title">{{ job.title }}</h2></a>
+        <div class="job-company">
+          {{ job.company_name }}
+        </div>
+
+        <div class="job-date">
+          {{ job.date_start }}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

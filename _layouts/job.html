@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="job">
+
+  <header class="job-header">
+    <h1 class="job-title">{{ page.title | escape }}</h1>
+    <p class="job-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        {{ page.date_start | date: date_format }}
+      </time>
+      {% if page.company_name %}
+        • <span class="company-name">{{ page.company_name }}</span>
+      {% endif %}</p>
+  </header>
+
+  <div class="job-content">
+    {{ content }}
+  </div>
+
+  {% if site.disqus.shortname %}
+    {% include disqus_comments.html %}
+  {% endif %}
+</article>

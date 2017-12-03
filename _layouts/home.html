@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Designers</h1>
+  
+  {{ content }}
+
+  <ul class="designer-list">
+    {% assign verified_designers = site.designers | where:'is_verified', true %}
+    {% for designer in verified_designers %}
+      <li>
+        <h2>
+          <a class="designer-link" href="{{ designer.url | relative_url }}">
+            <span class="designer-name">
+              {{ designer.name }}
+            </span>
+          </a>
+          is a Designer at 
+          <span>{{ designer.company_name | escape }}</span>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<article class="join">
+
+  <header class="join-header">
+    <h1 class="join-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="join-content">
+    <div class="join-qualifications">
+      <div>Qualifications:</div>
+      <ul>
+        <li>✅ You are a designer</li>
+        <li>✅ You are based in Detroit</li>
+      </ul>
+      <div>Once approved we'll add you to the list.</div>
+    </div>
+  </div>
+
+  <div class="join-form-wrapper">
+    <form id="joinForm" action="#">
+      {% for field in page.form_fields %}
+      <label for="{{ field.name }}">{{ field.label }}</label>
+      <input type="{{ field.type }}" name="{{ field.name }}" required="{{ field.is_required }}" autocomplete="{{ field.autocomplete }}" />
+      {% endfor %}
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</article>
+
+<script>
+  {% include join.js %}
+</script>

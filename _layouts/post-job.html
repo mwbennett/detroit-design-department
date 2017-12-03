@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article class="post-job">
+
+  <header class="post-job-header">
+    <h1 class="post-job-title">
+      {{ page.title | escape }}<br />
+      ${{ page.posting_price }} for {{ page.posting_duration }}
+    </h1>
+  </header>
+
+  <div class="post-job-content">
+    <div class="post-job-qualifications">
+      <div>What you get</div>
+      <ul>
+        <li>👍 Your job post listed for 30 days</li>
+        <li>👍 Your job post emailed to all designers on DDD</li>
+      </ul>
+      <div>How it works</div>
+      <ul>
+        <li>✅ Fill out the form below</li>
+        <li>✅ We’ll review your job post</li>
+        <li>✅ When approved, we’ll send you an invoice</li>
+        <li>✅ Once paid, we’ll post your job and share</li>
+      </ul>
+      <div>Once approved we'll add you to the list.</div>
+    </div>
+  </div>
+
+  <div class="post-job-form-wrapper">
+    <form id="postJobForm" action="#">
+      {% for field in page.form_fields %}
+      <label for="{{ field.name }}">{{ field.label }}</label>
+      <input type="{{ field.type }}" name="{{ field.name }}" required="{{ field.is_required }}" autocomplete="{{ field.autocomplete }}" />
+      {% endfor %}
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</article>
+
+<script>
+  {% include postJob.js %}
+</script>
