@@ -1,14 +1,6 @@
 ---
 title: Detroit Design Department
 timezone: UTC
-email: mark@waymark.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Designers in Detroit.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: _mrko_polo
-github_username:  mwbennett
-
 collections:
   designers:
     title: Designers
@@ -22,13 +14,16 @@ collections:
   uploads:
     title: Uploads
     output: true
-
+email: mark@waymark.com
+description: Designers in Detroit.
+baseurl: "/"
+url: ''
+twitter_username: _mrko_polo
+github_username: mwbennett
 header_pages:
-  - jobs.md
-  - post-job.md
-  - join.md
-
-# Build settings
+- jobs.md
+- post-job.md
+- join.md
 markdown: kramdown
 theme: minima
 plugins:

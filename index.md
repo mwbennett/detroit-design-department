@@ -1,5 +1,5 @@
 ---
-layout: home
 title: Designers
+layout: home
 ---
 
