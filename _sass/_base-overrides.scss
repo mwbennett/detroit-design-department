@@ -1,0 +1,33 @@
+label,
+input {
+  display: block;
+}
+
+label {
+  font-size: $small-font-size;
+  font-weight: bold;
+  margin: 25px 0 5px;
+}
+
+input {
+  border-radius: 5px;
+  border: solid 1px #000000;
+  font-size: $base-font-size;
+  height: 40px;
+  max-width: 500px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+button {
+  background-color: #000000;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  color: white;
+  font-size: $base-font-size;
+  font-weight: bold;
+  height: 50px;
+  margin-top: 25px;
+  width: 250px;
+}

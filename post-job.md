@@ -2,6 +2,7 @@
 title: Post a job
 permalink: "/post/"
 layout: post-job
+slug: post-job
 posting_price: 299
 posting_duration: 30 days
 form_fields:

@@ -2,6 +2,7 @@
 title: Join DDD
 permalink: "/join/"
 layout: join
+slug: join
 form_fields:
 - name: first_name
   label: First Name

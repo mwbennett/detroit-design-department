@@ -1,0 +1,14 @@
+.site-nav {
+  .page-link--post-job {
+    background-color: black;
+    color: white;
+  }
+
+  .page-link--post-job,
+  .page-link--join {
+    width: 100px;
+    border-radius: 20px;
+    padding: 10px 14px;
+    border: solid 2px black;
+  }
+}

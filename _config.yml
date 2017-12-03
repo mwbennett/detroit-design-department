@@ -1,6 +1,14 @@
 ---
 title: Detroit Design Department
 timezone: UTC
+email: mark@waymark.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Designers in Detroit.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: _mrko_polo
+github_username:  mwbennett
+
 collections:
   designers:
     title: Designers
@@ -14,14 +22,13 @@ collections:
   uploads:
     title: Uploads
     output: true
-email: your-email@example.com
-description: Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
-baseurl: 
-url: 
-twitter_username: jekyllrb
-github_username: jekyll
+
+header_pages:
+  - jobs.md
+  - post-job.md
+  - join.md
+
+# Build settings
 markdown: kramdown
 theme: minima
 plugins:

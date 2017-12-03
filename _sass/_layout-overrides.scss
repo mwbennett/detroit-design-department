@@ -1,0 +1,29 @@
+
+/**
+ * Page content
+ */
+.site-header {
+  margin-top: 90px;
+
+  @include media-query($on-laptop) {
+    margin-top: 0;
+  }
+  border: none;
+}
+
+.site-nav {
+  .page-link {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.site-title svg {
+  max-width: 75%;
+}
+
+.page-title {
+  font-size: 42px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}

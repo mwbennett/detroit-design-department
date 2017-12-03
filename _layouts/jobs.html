@@ -4,7 +4,9 @@ layout: default
 
 <div class="jobs">
 
-  <h1 class="page-heading">Jobs</h1>
+  <header class="page-header">
+    <h1 class="page-title">{{ page.title | escape }}</h1>
+  </header>
 
   <ul class="jobs-list">
     {% assign paid_jobs = site.jobs | where: 'has_paid', true %}
